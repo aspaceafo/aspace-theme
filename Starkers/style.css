@@ -1,0 +1,664 @@
+/*
+Theme Name: Artists Space
+Description: Based on Starkers
+Version: 1.0
+Author: Eve Essex
+*/
+
+@import "css/reset.css";
+@import "css/typography.css";
+@import "css/layout.css";
+
+html body,
+	html {
+	    margin: 0;
+    padding: 10px;
+	}
+body {
+ 
+    font: 13px "Univers",Helvetica,Arial,sans-serif;
+    font-weight: normal;
+    line-height: 20px;
+	overflow-x:hidden;
+	cursor: none !important;
+}
+
+body * { cursor: none !important }
+body a { cursor: none !important }
+
+	h1 {
+	font-size: 15px;
+	line-height: 25px;    
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    letter-spacing: 0.25px;
+	}
+
+a:link,
+a:visited {
+    color: #000000;
+    text-decoration: none;
+}
+a:hover,
+a:active {
+	color: red;
+}
+
+#column_2 p{
+margin-bottom: 1.5em;
+width:440px;}
+
+#main_content_intern p {
+margin-bottom: 1.5em;}
+
+#column_2_intern p {
+margin-bottom: 1.5em;}
+
+#cursor {
+background-image: url("http://artistsspace.org/sites/default/themes/artistsspace/images/cursor8.png");
+height: 198px;
+left: -500px; /*place fully left to hide on page*/
+opacity: 0.35;
+overflow-x: hidden;
+position: absolute;
+width: 262px;
+z-index: 99999;
+}
+
+#cursor-mobile {
+background-image: url("http://artistsspace.org/sites/default/themes/artistsspace/images/cursor8.png");
+height: 198px;
+opacity: 0.35;
+overflow-x: hidden;
+position: absolute;
+width: 262px;
+z-index: -200;
+top:70px;
+}
+
+
+#access .xoxo ul {
+list-style:none; /* Gets rid of bullets in the list */
+float:left;
+width:1015px;
+top: 10;
+background: #fff;
+}
+
+
+#access ul.xoxo a { /* Menu link styling */
+background: rgba(255, 255, 255, 0.0);
+color:green;
+text-decoration:none; /* Gets rid of underline for links */
+}
+
+/*#access li.current-menu-item a {
+color:rgb(255,0,0) !important ;}*/
+
+#access li a:hover {
+color:rgb(255,0,0) !important ;}
+
+/*#access .current_page_ancestor a{
+color:rgb(255,0,0) !important ;}*/
+
+/*#access .current-menu-parent a{
+color:rgb(255,0,0) !important ;}*/
+
+#access .xoxo ul li {
+position: relative;
+float:left;
+padding-right: 18px; 
+background: #fff;
+}
+/*Hide sub-menu during page load
+.sub-menu {
+visibility:hidden;
+} */
+
+.dcjq-parent .active {color:rgb(255,0,0) ! important ;}
+
+/*#access ul.sub-menu a{
+color:#003877 !important;
+} */
+
+#access ul.sub-menu a:hover{
+color:rgb(255,0,0) !important; }
+
+.menu-item a:hover {
+color:rgb(255,0,0) !important;}
+
+/* red only .active */
+	/*#access ul.sub-menu .current-menu-item a*/
+a.active, #access ul a.active {
+
+color:rgb(255,0,0) !important;
+
+}  
+
+/*blue submenu*/                             
+#access ul.sub-menu a{
+color:#003877;
+}
+
+/* Styling for all of the Sub Menus  */
+
+#access ul.xoxo ul {
+list-style: none; /* Gets rid of bullets */
+margin:0;
+padding:0;
+padding-top:5px;
+position:absolute; /* States that you are going to define exactly in pixels where the drop down appears */
+min-width:auto;
+}
+
+#menu-item-597 {
+float:right !important;}
+
+.page{	
+padding-left:15px;
+padding-top: 50px;
+	
+}
+.page #title{
+	font-size: 15px;
+}
+
+#title p {
+	font-size: 15px;
+}
+.page #programs h4{
+	font-size: 14px;
+	padding-top: 30px;
+	font-weight:normal;
+	display:inline;
+	text-decoration: none;
+}
+
+.page #whitney-programs h3 {
+	font-weight:normal;
+	text-decoration: none;
+	line-height: 2.5em;
+}
+
+.page #programs p{
+	display:inline;
+	text-decoration: none;
+}
+.page #downloads, .page #programs{
+	margin-top:50px;
+	text-decoration: none;
+clear:both;
+}
+.page #downloads h3, .page #press_downloads h3, .page #programs h3{
+	font-weight:normal;
+	text-decoration: none;
+	 line-height: 2.5em;
+}
+.page #date{
+	font: 14px/1.6em Univers,Helvetica,Arial,sans-serif;
+	margin: 0 0 1.5em;
+}
+.page #header_content{
+	font-size: 14px;
+	float:left;
+	width: 540px;
+}
+
+.page #program_title{
+	font-size: 16px;
+	padding-top: 10px;
+}
+.page #main_content{
+	width:500px;
+	padding-right:50px;
+	float:left;
+}
+.page #main_content_intern{
+	width:450px;
+	padding-right:50px;
+	float:left;
+}
+
+.page #main_content p{
+	font: 13px/1.6em Univers,Helvetica,Arial,sans-serif;
+    margin: 0 0 1.5em;
+}
+.page #main_content  #program_title p{
+	font: 13px/1.6em Univers,Helvetica,Arial,sans-serif;
+    margin: 0 0 1.5em;
+}
+.page #main_content  #program_type p{
+	font: 13px/1.6em Univers,Helvetica,Arial,sans-serif;
+    margin: 0 0 1.5em;
+}
+.page #main_content  #program_summary p{
+	font: 13px/1.6em Univers,Helvetica,Arial,sans-serif;
+	font-style: italic
+    margin: 0 0 1.5em;
+}
+.page #main_content  #program_time p{
+	font: 13px/1.6em Univers,Helvetica,Arial,sans-serif;
+    margin: 0 0 1.5em;
+}
+.page #related_programs{
+	width:440px;
+	padding-right:50px;
+	float:left;
+}
+.page #related_programs #title p{
+	font: 13px/1.6em Univers,Helvetica,Arial,sans-serif;
+    margin: 0 0 1.5em;
+}
+.page #related_programs #type p{
+	font: 13px/1.6em Univers,Helvetica,Arial,sans-serif;
+    margin: 0 0 1.5em;
+}
+.page #related_programs #summary p{
+	font: 13px/1.6em Univers,Helvetica,Arial,sans-serif;
+    margin: 0 0 1.5em;
+}
+.page #related_programs p{
+	font: 13px/1.6em Univers,Helvetica,Arial,sans-serif;
+    margin: 0 0 1.5em;
+}
+.page #date_and_time p{
+	font: 13.5px/1.6em Univers,Helvetica,Arial,sans-serif;
+}
+.page #content_summary_headline p{
+	font: 13.5px/1.6em Univers,Helvetica,Arial,sans-serif;
+    margin: 0 0 1.5em;
+}
+.page #column_2 {
+	width:540px;
+	float:left;
+}
+.page #column_2_intern {
+	width:450px;
+	float:left;
+}
+.page #column1_supporters {
+	width:400px;
+	float:left;
+}
+.page #column2_supporters {
+	width:200px;
+	float:left;
+}
+.page #pictures {
+	width:540px;
+	padding-left:20px;
+	float:left;
+}
+.page #content_pictures {
+	width:540px;
+	padding-left:30px;
+	float:left;
+}
+.page-id-757 #column_2, .page-id-782 #content_pictures{
+	width:260px;
+	float:left;
+}
+.page #content_pictures_below {
+	width:1150px;
+	padding-left:0px;
+	padding-top:40px;
+	float:bottom;
+}
+.thumbnail {
+   /* min-width:165px; */
+    max-width:700px
+    height:auto;
+    float:left;
+}
+.description{
+    clear:both;
+    padding:20px;
+/*    max-width: 750px;*/
+	width: 540px;
+}
+
+
+.sidebar-image {
+	margin:5px 5px 5px 5px;}
+
+.thumbnail.imagefield-field_pictures-annualportfolio{
+	padding:0px;
+	float: none;
+	max-height: 250px;
+	max-width: 250px;
+}
+.page #datebox{
+	width:80px;
+	float:left;
+	margin-top:25px;
+}
+.page-template-programs-future-php .page #datebox{
+	width:0px;
+	float:left;
+	margin-top:28px;
+	visibility:hidden;
+}
+
+.page-template-exhibitions-future-php .page #datebox{
+	width:0px;
+	float:left;
+	margin-top:28px;
+	visibility:hidden;
+}
+ 
+.page #future_content {
+    float: left;
+    padding-right: 50px;
+    width: 500px;
+    /*padding-top: 25px;*/
+    }
+
+#datebox h4{
+font: 13.5px/1.6em Univers,Helvetica,Arial,sans-serif;
+	font-weight:normal;
+}
+.datebox{
+	/* margin-top:6px; */
+}
+.datebox div{
+margin-bottom:20px;
+	
+}
+.datebox div.large{
+	margin-bottom:0px;
+}
+.datebox p{
+	margin:0;
+}
+.page a.selected{
+	color:rgb(255,0,0);
+}
+
+.page .datebox{               
+	text-decoration: none;
+	width:500px;
+	float:left;
+	margin-top: 24px; 
+}
+.content #login{
+	position:absolute;
+	margin-top:40px;
+	width:500px;
+	background:white;
+}
+#content #login #alw_loginForm table{
+	margin-bottom:50px;
+}
+.content #login p{
+	margin-top:10px;
+}
+.content #login #alw_registerMessage{
+	margin-bottom:10px;
+	display:block;
+}
+.content #login #close{color:blue;cursor:pointer;}
+#sponsor-logo {
+clear: both;
+padding-top:20px;
+padding-bottom: 75px;
+}
+
+.sponsor-logo {
+max-width: 200px;
+max-height: 80px;
+float:left;
+margin-right: 18px;}
+
+#whitney-image {
+float:right;
+margin-top:-23px;
+padding-right:15px;}
+
+#whitney-programs {
+margin-top:215px;}
+
+#whitney {
+width:385px;
+float:right;
+padding-right: 125px;}
+
+#footnote p{
+font-size:11px !important;}
+
+/* Auction Stuff  */
+
+#auction-list div, .page #main_content #auction-list p{
+padding: 0px;
+margin: 0px;
+}
+
+#auction-list, .page-template-page-auction-php #column_2{
+margin-top:25px;
+	
+}
+ 
+/* end auction stuff */
+
+.page-template-page-bookstore-php #main_content .status-publish {
+padding-top: 0px;
+padding-left: 0px;}
+
+.page-template-page-bookstore-php #main_content .status-publish p {
+margin: 0;
+}
+
+#bookstore-list {
+margin-bottom: 20px;}
+
+.toggle {
+    min-width:180px;
+    padding: 7px;
+}
+.toggle2 {
+width: auto !important;
+max-height: 650px;
+max-width: 650px;
+}
+/* hide #pictures until loaded */
+#pictures {
+visibility:hidden;
+}
+
+/*hide admin bar quirk on ajax pages */
+#column_2 #wpadminbar {
+visibility:hidden;
+display:none;}
+
+.current_link {
+color:rgb(255,0,0) !important;}
+
+#visit-top{
+	height:250px;}
+
+
+/* #connect -- social media icons */
+#connect{
+	height: 3.2em;
+}
+
+
+a.tumblr, a.twitter, a.facebook {
+    display: inline-block;
+    height: 3.2em;
+    width: 35px;  
+ 	
+}
+
+
+#connect a span {
+	visibility: hidden;
+	}                   
+	
+a.tumblr {
+	background-image:url(images/tm.png);
+	background-repeat:no-repeat;
+	}
+a.twitter {
+	background-image:url(images/tw.png);
+	background-repeat:no-repeat;
+	}
+a.facebook {
+	background-image:url(images/fb.png);
+	background-repeat:no-repeat;
+	}
+
+
+#connect a:hover{
+ 	opacity:0.6;
+    filter:alpha(opacity=60); /* For IE8 and earlier */
+}
+
+
+/* -- end #connect */
+
+
+
+#bt-map {
+	margin-left: 120px;
+	margin-top: 25px;
+	width:450px;
+	float:right;
+	position:absolute;
+	}
+
+.page-id-5168 #bt-map {
+	margin-top: 40px;
+	width:440px;
+	position:relative;}
+	
+/* Hide Menus onload */
+ul .sub-menu {
+	display: none;
+}
+	
+/* display certain #menu-nav items when logged in */	
+li.logged-in-nav {
+	display: none;
+}
+
+li.logged-out-nav {
+	display:list-item;
+}
+
+body.logged-in #menu-nav li.logged-in-nav {
+	display: list-item;
+}
+
+body.logged-in #menu-nav li.logged-out-nav {
+	display:none;
+}
+
+/*press downloads*/
+#press_downloads{
+	margin-top:20px;	
+}
+
+#press_downloads li{
+	margin-bottom:5px;
+}
+
+.redtext{
+	color:red;
+}
+
+/* override image icon */
+#pictures a[href*="jpg"]{
+padding:0px;
+background:none;
+}
+
+/* auction page */
+
+.page-template-page-auction-php #column_2 {
+width:200px;      
+float:right;
+}           
+
+.page-template-page-auction-php .page #pictures{
+width:250px;              
+float:right;
+}
+
+#auction-list {
+float:left;
+width:200px;
+margin-left:90px;}
+
+/* video styling */
+#video{
+position:relative;
+}                 
+
+#video-play{
+background-image: url("images/video-play.png");
+background-position: center center;
+background-repeat: no-repeat;
+height: 85%;
+position: absolute;
+width: 92%;
+}
+
+#video-play:hover{
+opacity: 0.6;
+filter: alpha(opacity = 60); /* For IE */
+}
+                          
+img.video-full{
+width:100%;
+}
+  
+#video-wrapper{
+position:relative;
+}
+
+/* Board of Directors */
+
+#directors a{
+	display:block;
+}                    
+.info{
+margin-left: 20px;
+margin-bottom: 1em;
+}
+
+/* future  */
+
+.right_future {
+margin-top:24px;
+}
+
+/* form styling */
+#usermessagea.success {
+color: green;
+}            
+
+.cf-ol input, .cf-ol textarea{
+display:block;
+width: 300px;	
+}
+
+.cf-ol li{
+margin-bottom: 1.5em;
+}
+
+#cformsform legend {
+display:none;
+}
+              
+.linklove {
+display:none;
+}                                   
+
+.reqtxt, .emailreqtxt {
+display:none;
+}
+
+#cformsform{
+margin-top:1.5em; 
+}
