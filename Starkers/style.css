@@ -9,36 +9,45 @@ Author: Eve Essex
 @import "css/typography.css";
 @import "css/layout.css";
 
-html body,
-	html {
-	    margin: 0;
-    padding: 10px;
-	}
+html body, html {
+	margin: 0;
+	padding: 10px;
+	
+	/*height, width declairations for cursor hiding*/
+	height: 100%;
+	width: 100%;
+}
 body {
- 
-    font: 13px "Univers",Helvetica,Arial,sans-serif;
-    font-weight: normal;
-    line-height: 20px;
+	font: 13px "Univers",Helvetica,Arial,sans-serif;
+	font-weight: normal;
+	line-height: 20px;
 	overflow-x:hidden;
-	cursor: none !important;
+/*	cursor: none !important;*/
 }
 
+/* 
 body * { cursor: none !important }
 body a { cursor: none !important }
 
-	h1 {
+below code will get called by js
+*/
+.hide-cursor {
+	cursor : none !important 
+}
+
+h1 {
 	font-size: 15px;
-	line-height: 25px;    
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
-    letter-spacing: 0.25px;
-	}
+	line-height: 25px;	  
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	letter-spacing: 0.25px;
+}
 
 a:link,
 a:visited {
-    color: #000000;
-    text-decoration: none;
+	color: #000000;
+	text-decoration: none;
 }
 a:hover,
 a:active {
@@ -136,12 +145,12 @@ color:rgb(255,0,0) !important;
 
 }  
 
-/*blue submenu*/                             
+/*blue submenu*/							 
 #access ul.sub-menu a{
 color:#003877;
 }
 
-/* Styling for all of the Sub Menus  */
+/* Styling for all of the Sub Menus	 */
 
 #access ul.xoxo ul {
 list-style: none; /* Gets rid of bullets */
@@ -222,24 +231,24 @@ clear:both;
 
 .page #main_content p{
 	font: 13px/1.6em Univers,Helvetica,Arial,sans-serif;
-    margin: 0 0 1.5em;
+	margin: 0 0 1.5em;
 }
-.page #main_content  #program_title p{
+.page #main_content	 #program_title p{
 	font: 13px/1.6em Univers,Helvetica,Arial,sans-serif;
-    margin: 0 0 1.5em;
+	margin: 0 0 1.5em;
 }
-.page #main_content  #program_type p{
+.page #main_content	 #program_type p{
 	font: 13px/1.6em Univers,Helvetica,Arial,sans-serif;
-    margin: 0 0 1.5em;
+	margin: 0 0 1.5em;
 }
-.page #main_content  #program_summary p{
+.page #main_content	 #program_summary p{
 	font: 13px/1.6em Univers,Helvetica,Arial,sans-serif;
 	font-style: italic
-    margin: 0 0 1.5em;
+	margin: 0 0 1.5em;
 }
-.page #main_content  #program_time p{
+.page #main_content	 #program_time p{
 	font: 13px/1.6em Univers,Helvetica,Arial,sans-serif;
-    margin: 0 0 1.5em;
+	margin: 0 0 1.5em;
 }
 .page #related_programs{
 	width:440px;
@@ -248,26 +257,26 @@ clear:both;
 }
 .page #related_programs #title p{
 	font: 13px/1.6em Univers,Helvetica,Arial,sans-serif;
-    margin: 0 0 1.5em;
+	margin: 0 0 1.5em;
 }
 .page #related_programs #type p{
 	font: 13px/1.6em Univers,Helvetica,Arial,sans-serif;
-    margin: 0 0 1.5em;
+	margin: 0 0 1.5em;
 }
 .page #related_programs #summary p{
 	font: 13px/1.6em Univers,Helvetica,Arial,sans-serif;
-    margin: 0 0 1.5em;
+	margin: 0 0 1.5em;
 }
 .page #related_programs p{
 	font: 13px/1.6em Univers,Helvetica,Arial,sans-serif;
-    margin: 0 0 1.5em;
+	margin: 0 0 1.5em;
 }
 .page #date_and_time p{
 	font: 13.5px/1.6em Univers,Helvetica,Arial,sans-serif;
 }
 .page #content_summary_headline p{
 	font: 13.5px/1.6em Univers,Helvetica,Arial,sans-serif;
-    margin: 0 0 1.5em;
+	margin: 0 0 1.5em;
 }
 .page #column_2 {
 	width:540px;
@@ -307,14 +316,14 @@ clear:both;
 }
 .thumbnail {
    /* min-width:165px; */
-    max-width:700px
-    height:auto;
-    float:left;
+	max-width:700px
+	height:auto;
+	float:left;
 }
 .description{
-    clear:both;
-    padding:20px;
-/*    max-width: 750px;*/
+	clear:both;
+	padding:20px;
+/*	  max-width: 750px;*/
 	width: 540px;
 }
 
@@ -348,11 +357,11 @@ clear:both;
 }
  
 .page #future_content {
-    float: left;
-    padding-right: 50px;
-    width: 500px;
-    /*padding-top: 25px;*/
-    }
+	float: left;
+	padding-right: 50px;
+	width: 500px;
+	/*padding-top: 25px;*/
+}
 
 #datebox h4{
 font: 13.5px/1.6em Univers,Helvetica,Arial,sans-serif;
@@ -375,7 +384,7 @@ margin-bottom:20px;
 	color:rgb(255,0,0);
 }
 
-.page .datebox{               
+.page .datebox{				  
 	text-decoration: none;
 	width:500px;
 	float:left;
@@ -452,8 +461,8 @@ margin: 0;
 margin-bottom: 20px;}
 
 .toggle {
-    min-width:180px;
-    padding: 7px;
+	min-width:180px;
+	padding: 7px;
 }
 .toggle2 {
 width: auto !important;
@@ -484,34 +493,34 @@ color:rgb(255,0,0) !important;}
 
 
 a.tumblr, a.twitter, a.facebook {
-    display: inline-block;
-    height: 3.2em;
-    width: 35px;  
- 	
+	display: inline-block;
+	height: 3.2em;
+	width: 35px;  
+	
 }
 
 
 #connect a span {
 	visibility: hidden;
-	}                   
+}					
 	
 a.tumblr {
 	background-image:url(images/tm.png);
 	background-repeat:no-repeat;
-	}
+}
 a.twitter {
 	background-image:url(images/tw.png);
 	background-repeat:no-repeat;
-	}
+}
 a.facebook {
 	background-image:url(images/fb.png);
 	background-repeat:no-repeat;
-	}
+}
 
 
 #connect a:hover{
- 	opacity:0.6;
-    filter:alpha(opacity=60); /* For IE8 and earlier */
+	opacity:0.6;
+	filter:alpha(opacity=60); /* For IE8 and earlier */
 }
 
 
@@ -525,7 +534,7 @@ a.facebook {
 	width:450px;
 	float:right;
 	position:absolute;
-	}
+}
 
 .page-id-5168 #bt-map {
 	margin-top: 40px;
@@ -556,16 +565,16 @@ body.logged-in #menu-nav li.logged-out-nav {
 
 /*press downloads*/
 #press_downloads{
-	margin-top:20px;	
+margin-top:20px;	
 }
 
 #press_downloads li{
-	margin-bottom:5px;
+margin-bottom:5px;
 }
 
 .redtext{
-	color:red;
-}
+color:red;
+}              
 
 /* override image icon */
 #pictures a[href*="jpg"]{
@@ -576,12 +585,12 @@ background:none;
 /* auction page */
 
 .page-template-page-auction-php #column_2 {
-width:200px;      
+width:200px;	  
 float:right;
-}           
+}			
 
 .page-template-page-auction-php .page #pictures{
-width:250px;              
+width:250px;			  
 float:right;
 }
 
@@ -593,7 +602,7 @@ margin-left:90px;}
 /* video styling */
 #video{
 position:relative;
-}                 
+}				  
 
 #video-play{
 background-image: url("images/video-play.png");
@@ -608,7 +617,7 @@ width: 92%;
 opacity: 0.6;
 filter: alpha(opacity = 60); /* For IE */
 }
-                          
+						  
 img.video-full{
 width:100%;
 }
@@ -621,7 +630,7 @@ position:relative;
 
 #directors a{
 	display:block;
-}                    
+}					 
 .info{
 margin-left: 20px;
 margin-bottom: 1em;
@@ -636,7 +645,7 @@ margin-top:24px;
 /* form styling */
 #usermessagea.success {
 color: green;
-}            
+}			 
 
 .cf-ol input, .cf-ol textarea{
 display:block;
@@ -650,10 +659,10 @@ margin-bottom: 1.5em;
 #cformsform legend {
 display:none;
 }
-              
+			  
 .linklove {
 display:none;
-}                                   
+}									
 
 .reqtxt, .emailreqtxt {
 display:none;

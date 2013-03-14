@@ -194,15 +194,10 @@ setupCursor = function() {
 
 
 jQuery(document).ready(function() {
+	$('body *, body, a').css({cursor: 'none'});
 	setupCursor();
-	console.log('cursor setup');	
 });
-/*
-jQuery(window).load(function(){
-	jQuery('.page-template-page-auction-php #auction-list #post-8206 p a').click();
 
-});
-*/
 
 jQuery(window).load(function(){
 	jQuery('.page-id-735 img').removeClass('imagefield-field_pictures');

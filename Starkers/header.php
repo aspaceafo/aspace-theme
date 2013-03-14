@@ -19,11 +19,12 @@
 	 * twentyten_filter_wp_title() in functions.php.
 	 */
 	wp_title( '|', true, 'right' );
-
 	?></title>
+
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+
 <?php
 	/* We add some JavaScript to pages with the comment form
 	 * to support sites with threaded comments (when in use).
@@ -38,8 +39,9 @@
 	 */
 	wp_head();
 ?>
-<link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory'); ?>/images/favicon.ico" />
 
+<link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory'); ?>/images/favicon.ico" />
+                                                                                              
 <script type="text/javascript" src="<?php bloginfo('stylesheet_directory')?>/lib.js"></script>
 
 <script type="text/javascript">
