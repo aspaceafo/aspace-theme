@@ -17,6 +17,7 @@ WHERE `wp_posts`.`post_type` = 'page'
 AND (`wp_posts`.`ID` = `end`.`post_id` AND `end`.`meta_key` = 'date_end_date' AND `end`.`meta_value` >= '".date("Y-m-d")."')
 AND (`wp_posts`.`ID` = `ex`.`post_id` AND `ex`.`meta_key` = '_mf_write_panel_id' AND `ex`.`meta_value` = 1) 
 AND `wp_posts`.`post_status` = 'publish' GROUP BY `wp_posts`.`ID` LIMIT 1";
+
 $present = $wpdb->get_results($query, ARRAY_A);
 ?>
 <div class="page">
@@ -33,9 +34,13 @@ $present = $wpdb->get_results($query, ARRAY_A);
 				
 				<?php $title = get('content_headline'); ?>
 				<?php if($title != ''): ?>
-					<?= $title ?>
+					<a href="<?php echo the_permalink(); ?>">
+						<?php echo $title; ?>
+					</a>
 				<?php else: ?>
-					<?= the_title(); ?>
+					<a href="<?php echo the_permalink(); ?>">
+						<?= the_title(); ?>
+					</a>
 				<?php endif;?>
 				
 				

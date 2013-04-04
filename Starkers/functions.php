@@ -253,9 +253,12 @@ add_filter( 'excerpt_length', 'twentyten_excerpt_length' );
  * @since Twenty Ten 1.0
  * @return string "Continue Reading" link
  */
-function twentyten_continue_reading_link() {
-	return ' <a href="'. get_permalink() . '">' . __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentyten' ) . '</a>';
+function twentyten_continue_reading_link() {                                                                                            
+	//turned off
+	//return ' <a href="'. get_permalink() . '">' . __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentyten' ) . '</a>';
 }
+
+
 
 /**
  * Replaces "[...]" (appended to automatically generated excerpts) with an ellipsis and twentyten_continue_reading_link().
