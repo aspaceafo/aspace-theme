@@ -671,3 +671,22 @@ display:none;
 #cformsform{
 margin-top:1.5em; 
 }
+
+
+/* two column layout */
+
+#left-column, #right-column{
+float:left;
+width:500px;
+}
+	
+#left-column {
+border:solid green;
+	
+}
+
+#right-column {
+border:solid red;
+
+}
+
