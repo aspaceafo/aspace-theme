@@ -675,18 +675,16 @@ margin-top:1.5em;
 
 /* two column layout */
 
-#left-column, #right-column{
+div#left-column, div#right-column{
 float:left;
-width:500px;
+width:475px;
 }
 	
 #left-column {
-border:solid green;
-	
+margin-right:25px;
 }
 
 #right-column {
-border:solid red;
-
+margin-left:25px;
 }
 
