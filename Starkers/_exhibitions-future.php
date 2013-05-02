@@ -31,15 +31,14 @@ $present = $wpdb->get_results($query, ARRAY_A);
 	$dates = array();
 	$links = array();
 	
-//	if($ex['date_start_date'])
-  if($ex['description']){
+//	if($ex['date_start_date']){
 
 
 		foreach($present as $ex){
 			$year = date('Y', strtotime($ex['startdate']));
 			$startend = date('F j', strtotime($ex['startdate']))." – ".date('F j, Y', strtotime($ex['enddate']));
 
-	//		if($ex['description'])
+			if($ex['description']){
 			   // $dates[''.$year.''] .= ''
 			
 				echo"<div>
@@ -53,13 +52,18 @@ $present = $wpdb->get_results($query, ARRAY_A);
 				</div>
 				
 			<br />"; 
-	   }//foreach
-	}//if
+			}//if
+		
+			else{
+				echo "<div>No upcoming exhibitions at this time.</div>"; 
+			}
+			
+		
+		}//foreach
+ 	
 	 
 		
-		else{
-			echo "<div>No upcoming exhibitions at this time.</div>"; 
-		}
+		
 	
 
 	?>

@@ -35,13 +35,14 @@ $present = $wpdb->get_results($query, ARRAY_A);
 			<div id="title">
   
 				<?php $title = get('content_headline'); ?>
-				<?php if($title != ''): ?>
+				<?php if($title): ?>
 					<a href="<?= get_permalink();?>">
 						<?= $title ?>
 					</a>
 				<?php else: ?>
-					<?= the_title(); ?>
-					
+					<a href="<?= get_permalink();?>">
+						<?= the_title(); ?>
+					</a>
 				<?php endif;?>
 				
 			</div>
@@ -139,15 +140,21 @@ $present = $wpdb->get_results($query, ARRAY_A);
 				if($groupofgroups){
 				?>
 					<div id="pictures">
-						<?php
-					foreach($groupofgroups as $group){
-						echo "<div>";
-						echo "<img src='".$group['picture_pictures'][1]["o"]."' class='imagefield-field_pictures toggle thumbnail' class='imagefield-field_pictures toggle thumbnail'  onload='fadeIn(this)'  style='display:none;' />";
-						echo "<div class='description'>";
-						echo "<img src='".$group['picture_pictures'][1]["o"]."' class='imagefield-field_pictures toggle2'>";
-						echo "<p>".$group['picture_title'][1]."</div><br />";
-						echo "</p></div>";
-					} 
+					<?php
+					foreach($groupofgroups as $group){ 
+					?>
+						<div>
+							<img src="<?php echo $group['picture_pictures'][1]["o"]?>" class="imagefield-field_pictures toggle thumbnail" class="imagefield-field_pictures toggle thumbnail" />
+							<div class="description">
+								<img src="<?php echo $group['picture_pictures'][1]["o"]?>" class="imagefield-field_pictures toggle2">
+								<p>
+									<?php echo $group['picture_title'][1]?>
+								</p>
+							</div>
+							<br />
+						</div>
+					<?php 
+					} //endforeach 
 					?>
 					</div>
 				<?php

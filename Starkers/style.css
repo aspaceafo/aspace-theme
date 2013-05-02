@@ -286,6 +286,9 @@ clear:both;
 	width:450px;
 	float:left;
 }
+
+/*supporters page*/
+
 .page #column1_supporters {
 	width:400px;
 	float:left;
@@ -294,6 +297,13 @@ clear:both;
 	width:200px;
 	float:left;
 }
+.page #column3_supporters {
+	float: left;
+    margin-left: 80px;
+    width: 200px;
+}
+/*end supporters*/
+
 .page #pictures {
 	width:540px;
 	padding-left:20px;
@@ -469,10 +479,11 @@ width: auto !important;
 max-height: 650px;
 max-width: 650px;
 }
-/* hide #pictures until loaded */
+/* hide #pictures until loaded
 #pictures {
 visibility:hidden;
 }
+*/
 
 /*hide admin bar quirk on ajax pages */
 #column_2 #wpadminbar {
@@ -677,14 +688,14 @@ margin-top:1.5em;
 
 div#left-column, div#right-column{
 float:left;
-width:475px;
+width:425px;
 }
 	
 #left-column {
-margin-right:25px;
+margin-right:75px;
 }
 
 #right-column {
-margin-left:25px;
+margin-left:75px;
 }
 

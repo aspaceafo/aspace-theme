@@ -10,15 +10,19 @@ Template Name: Supporters
 	<?php edit_post_link( 'edit', '<p>', '</p>'); ?> 
 
 	<div id="title">
-		<?= the_title(); ?>
+		<?php echo the_title(); ?>
 	</div>
 <br style="clear:both">
 	<div id="column1_supporters">
-		<?= get('content_column'); ?>
+		<?php echo get('content_column'); ?>
 	</div>
 	<div id="column2_supporters">
-		<?= get('content_column_2'); ?>
+		<?php echo get('content_column_2'); ?>
 	</div>
+	<div id="column3_supporters">
+		<?php echo get('content_column_3'); ?>
+	</div>
+	
 		<?php
 		$groupofgroups = get_group('pictures');
 		if($groupofgroups){

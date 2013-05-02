@@ -1,5 +1,6 @@
 jQuery(document).ready(function(){
-   jQuery('#pictures').css("visibility","visible");
+   // jQuery('#pictures').css("visibility","visible");
+   // onload images
    //	jQuery('#directors p').hide();
    
 $(".info").each(function(){ //all paragraphs that are children of .member
@@ -8,7 +9,7 @@ $(".info").each(function(){ //all paragraphs that are children of .member
 		console.log(this);
 });   
 
-
+ 
 
    function randomMargin(){       
        $('.thumbnail').each(function(){
